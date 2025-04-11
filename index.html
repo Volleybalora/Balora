@@ -83,19 +83,75 @@
 	  
 	  
 <!-- Start of section adapted from https://getbootstrap.com/docs/5.1/examples/album/ -->
-    <header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
-      <div class="row">
-        <div class="col-md-8 col-lg-6 mx-auto py-5">
-          <h1 class="display-3">Hero section</h1>
-          <p class="lead">A short and snappy tagline that makes your reader want to read things from your website.</p>
-          <p class="mt-5">
-            <a href="#" class="btn btn-lg btn-warning m-1 d-block d-sm-inline">Call to action</a>
-            <a href="#" class="btn btn-lg btn-danger m-1 d-block d-sm-inline">Another call to action</a>
-          </p>
+<header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
+  <div class="row">
+    <div class="col-md-10 col-lg-8 mx-auto py-5">
+      <h1 class="display-3">Welcome to Balora</h1>
+      <p class="lead">Find your volleyball matches right now!&nbsp;</p>
+      
+      <!-- Advanced Filter Bar -->
+      <form class="row g-2 justify-content-center mt-4">
+        <!-- Location Dropdown -->
+        <div class="col-12 col-md-3">
+          <select class="form-select" aria-label="Location select">
+            <option selected>Location</option>
+            <option value="1">Drenthe</option>
+            <option value="2">Flevoland</option>
+            <option value="3">Friesland</option>
+			<option value="4">Gelderland</option>
+			<option value="5">Groningen</option>
+			<option value="6">Limburg</option>
+			<option value="7">Noord-Brabant</option>
+			<option value="8">Noord-Holland</option>
+			<option value="9">Overijssel</option>
+			<option value="10">Utrecht</option>
+			<option value="11">Zeeland</option>
+			<option value="12">Zuid-Holland</option>
+          </select>
         </div>
-      </div>
-    </header>
-    <!-- End of hero section -->
+
+        <!-- Date Picker -->
+        <div class="col-12 col-md-3">
+          <input type="date" class="form-control" aria-label="Select date">
+        </div>
+
+        <!-- Level Dropdown -->
+        <div class="col-12 col-md-2">
+          <select class="form-select" aria-label="Level select">
+            <option selected>Level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <!-- Gender Dropdown -->
+        <div class="col-12 col-md-2">
+          <select class="form-select" aria-label="Gender select">
+            <option selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="mixed">prefer not to say</option>
+			<option value="something different">something different</option>
+          </select>
+        </div>
+
+        <!-- Search Button -->
+        <div class="col-12 col-md-2">
+          <button type="submit" class="btn btn-light w-100">Search</button>
+        </div>
+      </form>
+
+      <!-- Buttons -->
+      <p class="mt-5">
+        <a href="#" class="btn btn-lg btn-warning m-1 d-block d-sm-inline">Call to action</a>
+        <a href="#" class="btn btn-lg btn-danger m-1 d-block d-sm-inline">Another call to action</a>
+      </p>
+    </div>
+  </div>
+</header>
+<!-- End of hero section -->
+	  
 	<!-- Start of Carousel -->
 
 	<!-- End of Carousel -->
@@ -107,8 +163,8 @@
       <div class="card shadow h-100">
         <img class="img-fluid" src="images/balora-logo.png" alt="Placeholder Image">
         <div class="card-body">
-          <h5 class="card-title">Card #1</h5>
-          <p class="card-text">Sed ut perspiciatis, unde omnis iste natus error...</p>
+          <h5 class="card-title">What is Balora?</h5>
+          <p class="card-text">Click here to find out more!&nbsp; &nbsp;&nbsp;</p>
         </div>
         <div class="card-footer p-2 text-end">
           <a href="#" class="btn btn-primary">Learn more</a>
@@ -121,8 +177,8 @@
       <div class="card shadow h-100">
         <img class="img-fluid" src="images/placeholder.png" alt="Placeholder Image">
         <div class="card-body">
-          <h5 class="card-title">Card #2</h5>
-          <p class="card-text">Nemo enim ipsam voluptatem, quia voluptas sit...</p>
+          <h5 class="card-title">Matches</h5>
+          <p class="card-text">Click here to find volleyball matches of each skill leavel near you</p>
         </div>
         <div class="card-footer p-2 text-end">
           <a href="#" class="btn btn-primary">Learn more</a>
