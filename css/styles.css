@@ -5,6 +5,9 @@
 /* Changing the main font and background colour */
 
 body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	font-family: Raleway, sans-serif;
 	color: midnightblue;
 	background-color: #fffcf8;
@@ -46,4 +49,108 @@ footer a:hover {
 
 .section-gap {
   margin-top: 4rem;
+}
+
+
+.contact {
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url("../images/volleyball-sunset-lake-silhouettes.jpg");
+	background-size: cover;
+}
+
+
+.contact .content {
+	max-width: 800px;
+	text-align: center;
+}
+
+.contact .content h2{
+	font-size: 36px;
+	font-weight: 500;
+	color: #FCEFD4;
+}
+
+.contact .content p{
+	font-weight: 300;
+	color: #FCEFD4;
+} 
+
+.container { 
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;	
+}
+
+.container .contact-info {
+	width: 50%;
+	display: flex;
+	flex-flow: column;
+}
+
+.container .contact-info .box {
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.container .contact-info .box .icon {
+	min-width: 60px;
+	height: 60px;
+	background: #FCEFD4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.container .contact-info .box .text { 
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #FCEFD4;
+	flex-direction: column;
+	font-weight: 300;
+}
+
+.container .contact-info .box .text h3 { 
+	font-weight: 500;
+	color: #329CCE;
+}
+
+.contact-form {
+	width: 40%;
+	padding: 40px;
+	background: #FCEFD4;
+}
+
+.contact-form h2 {
+	font-size: 30px;
+	color: black;
+}
+
+.contact-form .input-box {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid black;
+	outline: none;
+	resize: none;
 }
