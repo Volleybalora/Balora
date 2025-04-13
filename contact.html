@@ -123,7 +123,7 @@
 				</div>
 				<!--End Email-->
 					
-					
+			<!--Start Contact Form-->		
 			</div>
 			<div class="contact-form">
 				<form>
@@ -136,8 +136,8 @@
 						<input type="text" name="" required="required">
 						<span>Email</span>
 					</div>
-					<div class="input-box">
-						<textarea required="required"> </textarea>
+					<div class="input-box">					 
+						<textarea required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')"></textarea>
 						<span>Type your message...</span>
 					</div>
 					<div class="input-box">
@@ -145,6 +145,8 @@
 					</div>
 				</form>
 			</div>
+			<!--End Contact Form-->	
+			
 		</div>
 	</section>
 </body>
