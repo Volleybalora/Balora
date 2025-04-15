@@ -13,7 +13,7 @@ body {
 /* Changing the background colour for the header */
 
 header {
-	background-color:#c25741;
+	background-color:#329cce;
 }
 
 /* Changing the background color for the navigation bar */
@@ -43,3 +43,30 @@ footer a:hover {
 		0 0 .2em white,
 		0 0 .5em white;
 }
+
+.blue-color {
+	color: #329cce
+}
+
+.red-color {
+	color: #d14e39
+}
+.yellow-color {
+	color: #fac74f
+}
+
+.off-white {
+	color: #ffeed1
+}
+
+.card-picture {
+  width: 100%;
+  height: 200px; /* or whatever height you prefer */
+  object-fit: cover;
+}
+
+.custom-buttton {
+	background-color: #d14e39;
+  border-color: #d14e39;
+}
+
