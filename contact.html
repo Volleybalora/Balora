@@ -84,19 +84,20 @@
 <!--Start Contact sectin-->
   <body> 
     <section class= "contact">
+		<div class="info-wrapper">
 		<div class= "content">
-			<h2>Contact Us</h2>
-			<p>Do you have any concerns, questions or suggestions? You can contact us via a letter, an email, or a phone call from Monday until Thursday from 9am - 17pm. We will assist you as soon as possible.</p>
+			<h2><b>Contact Us</b></h2>
+			<p><b>Do you have any concerns, questions or suggestions? You can contact us via a letter, an email, or a phone call from Monday until Thursday from 9am - 17pm. We will assist you as soon as possible.</b></p>
 		</div>
 		
 		<!--Start Postal Adress-->	
-		<div class= "container"> 
+		<div class= "container">
 			<div class= "contact-info">
 				<div class = "box">
 					<div class= "icon"> <img src="images/location-sign.svg" width="40" alt="Balora Office Location"> </div> 
 					<div class= "text">
 						<h3>Postal Adress</h3>
-						<p>Breda University of Applied Sciences <br> Postbus 3917 <br> 4800 DX  Breda <br> The Netherlands </p>
+						<p><b>Breda University of Applied Sciences <br> Postbus 3917 <br> 4800 DX  Breda <br> The Netherlands</b></p>
 					</div>
 				</div>		
 				<!--End Postal Adress-->
@@ -107,7 +108,7 @@
 					<div class= "text">
 						<h3>Phone Number</h3>
 						<a class="d-flex align-items-center" href="call:+31 (0) 76 533 22 03" target="_blank">
-						<p>+31 (0) 76 533 22 03</p>
+						<p><b>+31 (0) 76 533 22 03</b></p>
 						</a>
 					</div>
 				</div>
@@ -120,7 +121,7 @@
 					<div class= "text">
 						<h3>Email</h3>
 						<a class="d-flex align-items-center" href="mailto:balora.official1@gmail.com" target="_blank">
-							<p>balora.official1@gmail.com</p>
+							<p><b>balora.official1@gmail.com</b></p>
 						</a>
 					</div>
 				</div>
@@ -132,11 +133,11 @@
 				<form>
 					<h2>Send Message</h2>
 					<div class="input-box">
-						<input type="text" name="" required="required">
+						<input type="text" name="" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 						<span>Full Name</span>
 					</div>
 					<div class="input-box">
-						<input type="text" name="" required="required">
+						<input type="text" name="" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 						<span>Email</span>
 					</div>
 					<div class="input-box">					 
@@ -144,36 +145,18 @@
 						<span>Type your message...</span>
 					</div>
 					<div class="input-box">
-						<input type="submit" value="Send">
+						<input type="submit" value="Send"> 
 					</div>
-					<p id="confirmation" style="display:none; color: green; font-weight: bold;">Sent!</p>
 				</form>
 			</div>
 			<!--End Contact Form-->	
 			
+			</div>
 		</div>
 	</section>
 </body>
 	  
-<script>
-  const form = document.getElementById('contact-form');
-  const confirmation = document.getElementById('confirmation');
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent the page from refreshing
-
-    // Show the "Sent!" message
-    confirmation.style.display = 'block';
-
-    // Optionally, hide the message again after a few seconds
-    setTimeout(() => {
-      confirmation.style.display = 'none';
-    }, 3000); // 3 seconds
-
-    // Reset the form fields
-    form.reset();
-  });
-</script>
 
 	</body>
 	<!--End Contact sectin-->
