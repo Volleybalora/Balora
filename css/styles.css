@@ -47,9 +47,6 @@ footer a:hover {
 		0 0 .5em white;
 }
 
-.section-gap {
-  margin-top: 4rem;
-}
 
 .info-wrapper {
   background-color: rgba(252, 239, 212, 0.9);
@@ -59,6 +56,14 @@ footer a:hover {
   width: 100%;
   margin-bottom: 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blue-background { 
+	background-color: #329CCE;
+}
+
+.yellow-border {
+	border: 3px solid #FAC74F;
 }
 
 .contact {
@@ -90,6 +95,13 @@ footer a:hover {
 	font-weight: 300;
 	color: black;
 } 
+
+.contact-info .box .text a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 
 .container { 
 	width: 100%;
