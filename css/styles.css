@@ -233,6 +233,7 @@ footer a:hover {
   .contact-form {
     width: 100%;
   }
+}
 
 body, html {
   margin: 0;
@@ -273,8 +274,14 @@ body, html {
   object-fit: cover;
 }
 
-.password {
-	font-size: 13px;
-	color: #329cce;
-} 
+.contact-form .password p {
+  font-size: 13px;
+  color: #329cce;
+}
+
+.contact-form .password p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 	
