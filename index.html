@@ -45,19 +45,9 @@
                 Matches
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="matches.html">Drenthe</a></li>
-                <li><a class="dropdown-item" href="matches.html">Flevoland</a></li>
+                <li><a class="dropdown-item" href="matches.html">Join match</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="matches.html">Friesland</a></li>
-                <li><a class="dropdown-item" href="matches.html">Gelderland</a></li>
-				<li><a class="dropdown-item" href="matches.html">Groningen</a></li>
-				<li><a class="dropdown-item" href="matches.html">Limburg</a></li>
-				<li><a class="dropdown-item" href="matches.html">North-Brabant</a></li>
-				<li><a class="dropdown-item" href="matches.html">North-Holland</a></li>
-				<li><a class="dropdown-item" href="matches.html">Overijssel</a></li>
-				<li><a class="dropdown-item" href="matches.html">Utrecht</a></li>
-				<li><a class="dropdown-item" href="matches.html">Zeeland</a></li>
-				<li><a class="dropdown-item" href="matches.html">South-Holland</a></li>
+				<li><a class="dropdown-item" href="matches.html">Create match</a></li>
               </ul>
             </li>
 		<!--matches page-->
@@ -92,24 +82,14 @@
       <!-- Advanced Filter Bar -->
       <form class="row g-2 justify-content-center mt-4">
         <!-- Location Dropdown -->
-        <div class="col-12 col-md-3">
-          <select class="form-select" aria-label="Location select">
-            <option selected>Location</option>
-            <option value="1">Drenthe</option>
-            <option value="2">Flevoland</option>
-            <option value="3">Friesland</option>
-			<option value="4">Gelderland</option>
-			<option value="5">Groningen</option>
-			<option value="6">Limburg</option>
-			<option value="7">Noord-Brabant</option>
-			<option value="8">Noord-Holland</option>
-			<option value="9">Overijssel</option>
-			<option value="10">Utrecht</option>
-			<option value="11">Zeeland</option>
-			<option value="12">Zuid-Holland</option>
-          </select>
-        </div>
-
+       <div class="col-12 col-md-3">
+  <input 
+    type="text" 
+    class="form-control" 
+    placeholder="Search location..." 
+    aria-label="Location search"
+  >
+</div>
         <!-- Date Picker -->
         <div class="col-12 col-md-3">
           <input type="date" class="form-control" aria-label="Select date">
@@ -159,13 +139,13 @@
     <!-- Card #1 -->
     <div class="col-sm-6 col-lg-6 col-xl-6"> <!-- Adjusted from col-lg-4 to col-lg-6 -->
       <div class="card shadow h-100">
-        <img class="img-fluid" src="images/balora-logo.png" alt="Placeholder Image">
+        <img class="img-fluid mainpage-card-picture" src="images/balora-logo.png" alt="Placeholder Image">
         <div class="card-body">
           <h5 class="card-title">What is Balora?</h5>
-          <p class="card-text">Click here to find out more!&nbsp; &nbsp;&nbsp;</p>
+          <p class="card-text">Balora is a platform which connects people who play, want to play, or are just interested in playing volleyball.&nbsp; &nbsp; &nbsp;</p>
         </div>
         <div class="card-footer p-2 text-end">
-          <a href="#" class="btn btn-primary">Learn more</a>
+          <a href="about-us.html" class="btn btn-primary">Learn more</a>
         </div>
       </div>
     </div>
@@ -173,13 +153,13 @@
     <!-- Card #2 -->
     <div class="col-sm-6 col-lg-6 col-xl-6"> <!-- Adjusted from col-lg-4 to col-lg-6 -->
       <div class="card shadow h-100">
-        <img class="img-fluid" src="images/playingvolleyball.jpg" alt="Placeholder Image">
+        <img class="img-fluid mainpage-card-picture" src="images/playingvolleyball.jpg" alt="Placeholder Image">
         <div class="card-body">
-          <h5 class="card-title">Matches</h5>
-          <p class="card-text">Click here to find volleyball matches of each skill level near you</p>
+          <h5 class="card-title">How does it work?&nbsp;</h5>
+          <p class="card-text">Create an account, fill in your desired perameters, and find volleyball matches in no time!&nbsp; &nbsp; &nbsp;</p>
         </div>
         <div class="card-footer p-2 text-end">
-          <a href="#" class="btn btn-primary">Learn more</a>
+          <a href="log-in.html" class="btn btn-primary">Learn more</a>
         </div>
       </div>
     </div>
@@ -188,11 +168,23 @@
 
 <!-- ending of card section -->
 
+	<div class="text-center mt-5 yell blue-color">
+  <h2>Anytime, Anywhere</h2>
+  <p class="lead">Find volleyball matches in your area!</p>
+</div>
 
+	<!-- Contact Footer -->
+<footer class="text-light py-5" style="background-color: #329cce;">
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h2 class="mb-4 fw-bold text-center">Contact</h2>
+    <!-- Add your contact content below -->
+    <p class="text-center">Have questions or want to reach out? Email us at <a href="mailto:info@balora.com" class="text-white fw-semibold text-decoration-underline">info@balora.com</a></p>
+    <p class="text-center">Or follow us on Instagram: <a href="https://instagram.com/balora" class="text-white fw-semibold text-decoration-underline">@balora</a></p>
+  </div>
+</footer>
     <!-- Start of main placeholder in landing page -->
     
     <!-- End of main placeholder -->
 
-  ffeed1
   </body>
 </html>
