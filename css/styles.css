@@ -12,7 +12,7 @@ body {
 	box-sizing: border-box;
 	font-family: Raleway, sans-serif;
 	color: midnightblue;
-	background-color: #fffcf8;
+	background-color: #FCEFD4;
 }
 
 /* Changing the background colour for the header */
@@ -24,7 +24,8 @@ header {
 /* Changing the background color for the navigation bar */
 
 .navbar {
-	background-color: #f8f0e6;
+	background-color: #FCEFD4;
+	border-bottom: 2px solid #D14139;
 }
 
 /* Effect on social media buttons */
@@ -107,6 +108,10 @@ footer a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.icon-red {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(94%) saturate(617%) hue-rotate(335deg) brightness(102%) contrast(92%);
 }
 
 
