@@ -63,6 +63,10 @@ footer a:hover {
 	background-color: #329CCE;
 }
 
+.accordion-body {
+  word-break: break-word;
+}
+
 .yellow-border {
 	border: 3px solid #FAC74F;
 }
