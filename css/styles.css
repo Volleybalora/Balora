@@ -95,7 +95,7 @@ footer a:hover {
 .contact .content h2{
 	font-size: 36px;
 	font-weight: 500;
-	color: black;
+	color: #329CCE;
 }
 
 .contact .content p{
@@ -163,7 +163,7 @@ footer a:hover {
 
 .contact-form h2 {
 	font-size: 30px;
-	color: black;
+	color: #329CCE;
 }
 
 .contact-form .input-box {
@@ -183,7 +183,7 @@ footer a:hover {
 	font-size: 16px;
 	margin: 10px 0;
 	border: none;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid #D14139;
 	outline: none;
 	resize: none;
 }
@@ -208,7 +208,7 @@ footer a:hover {
 	transform: translateY(-20px);
 }
 
-.contact-form .input-box input[type="submit"] { 
+.contact-form .input-box input[type="button"] { 
 	width: inherit;
 	background: #329CCE;
 	color: #FCEFD4;
@@ -235,7 +235,6 @@ footer a:hover {
   .contact-form {
     width: 100%;
   }
-}
 
 body, html {
   margin: 0;
@@ -279,3 +278,9 @@ body, html {
 .header-font{
   font-family: 'Wicked Mouse', sans-serif;      
 }
+
+.password {
+	font-size: 13px;
+	color: #329cce;
+} 
+	
