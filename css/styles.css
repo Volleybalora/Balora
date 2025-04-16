@@ -156,9 +156,13 @@ footer a:hover {
 }
 
 .contact-form {
-	width: 40%;
-	padding: 40px;
-	background: #FCEFD4;
+  width: 40%;
+  padding: 40px;
+  background-color: rgba(252, 239, 212, 0.9);
+  border-radius: 20px;
+  border: 2px solid #FAC74F;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .contact-form h2 {
@@ -308,5 +312,18 @@ body, html {
   background-color: #329cce;
   color: black;
 }
+
+.contact.login-page {
+  background: url("../images/team-action-shot-beach.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 	
