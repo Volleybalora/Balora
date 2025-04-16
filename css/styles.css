@@ -286,3 +286,25 @@ body, html {
   cursor: pointer;
 }
 	
+/*navbar buttons*/
+.custom-create-btn {
+  background-color: none;
+  color: #D14139;
+  border: 1px solid #D14139;
+}
+
+.custom-create-btn:hover {
+  background-color: #D14139;
+  color: black;
+}
+
+.custom-login-btn {
+  background-color: none;  
+  color: #329cce;
+  border: 1px solid #329cce;
+}
+
+.custom-login-btn:hover {
+  background-color: #329cce;
+  color: black;
+}
