@@ -352,3 +352,14 @@ body, html {
 .text-align-left{
 	text-align: left;
 }
+
+.btn-custom-blue {
+  background-color: #329cce;
+  color: #FCEFD4;
+  border: none;
+}
+
+.btn-custom-blue:hover {
+  background-color: #268ab8;
+}
+
