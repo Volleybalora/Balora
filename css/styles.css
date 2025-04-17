@@ -348,3 +348,7 @@ body, html {
   height: 100%;
   object-fit: cover;
 }
+
+.text-align-left{
+	text-align: left;
+}
