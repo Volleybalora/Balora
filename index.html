@@ -23,25 +23,23 @@
   <body class="h-100 d-flex flex-column">
 
     <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-	<nav class="navbar navbar-expand-lg navbar-light">
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <a class="navbar-brand" href="#">
-          <img src="images/balora-logo.png" width="70" alt="Breda University of Applied Sciences">
+          <img src="images/balora-logo-with-font.png" width="70" alt="Breda University of Applied Sciences">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			
-	
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
 			  
-		<!--matches page-->
-			  <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			<!--matches page-->
+			<li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Matches
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -50,7 +48,7 @@
 				<li><a class="dropdown-item" href="matches.html">Create match</a></li>
               </ul>
             </li>
-		<!--matches page-->
+			<!--matches page-->
 			  
 			 <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="about-us.html">About us</a>
@@ -63,9 +61,10 @@
             </li>
 		 </ul>
 			
-		<div class="d-flex ms-auto">
-        	<a class="btn btn-outline-primary" href="log-in.html">Login</a>
-      	</div>
+			<div class="d-flex gap-3 ms-auto">
+				<a class="btn custom-create-btn" href="log-in.html">Create Match</a>
+        		<a class="btn custom-login-btn" href="log-in.html">Login</a>
+      		</div>
         </div>
       </div>
     </nav>
@@ -82,7 +81,7 @@
       <p class="lead">Find your volleyball matches right now!&nbsp;</p>
       
       <!-- Advanced Filter Bar -->
-      <form class="row g-2 justify-content-center mt-4">
+      <form class="row g-3" action="matches.html" method="GET">
         <!-- Location Dropdown -->
        <div class="col-12 col-md-3">
   <input 
@@ -123,19 +122,13 @@
           <button type="submit" class="btn btn-light w-100">Search</button>
         </div>
       </form>
-     
-            <option value="mixed">prefer not to say</option>
     </div>
   </div>
 </header>
 <!-- End of hero section -->
 	  
-	<!-- Start of Carousel -->
 
-	<!-- End of Carousel -->
-	  
-	<!-- beginning of card section -->
-
+<!-- Beginning of card section -->
 <div class="container mt-4">
   <div class="row">
     <!-- Card #1 -->
@@ -144,18 +137,7 @@
         <img class="img-fluid mainpage-card-picture" src="images/balora-logo.png" alt="Placeholder Image">
         <div class="card-body">
           <h5 class="card-title header-font yellow">What is Balora?</h5>
-          <p class="card-text">How does Balora work?
-
-Joining or creating a volleyball match with Balora is easy! 
-
-Join a Match
-Browse upcoming matches and log in to view player profiles of the people attending to get a feel for the team before joining.
-
-Create a Match
-Want to start your own game? Log in, set your preferences (location, date, time, gender, level and description), and create a match. You’ll receive notifications when players join.
-
-Connect with Players
-Once logged in, players can view your profile and you can see theirs. It’s all about making volleyball more social, spontaneous, and fun..&nbsp; &nbsp; &nbsp;</p>
+          <p class="card-text"> Balora is a new platform that makes playing volleyball <b>spontaneous, accessible, and social.</b> Your skill level doesn’t matter, Balora connects international students in your area that are eager to play volleyball. Whether you want to find a team, join matches, or create your own spontaneous game, Balora helps make it happen. </p>
         </div>
         <div class="card-footer p-2 text-end">
           <a href="about-us.html" class="btn btn-primary">Learn more</a>
@@ -169,10 +151,10 @@ Once logged in, players can view your profile and you can see theirs. It’s all
         <img class="rounded-4 img-fluid mainpage-card-picture" src="images/playingvolleyball.jpg" alt="Placeholder Image">
         <div class="card-body">
           <h5 class="card-title header-font">How does it work?&nbsp;</h5>
-          <p class="card-text">Create an account, fill in your desired perameters, and find volleyball matches in no time!&nbsp; &nbsp; &nbsp;</p>
+          <p class="card-text">Joining or creating a volleyball match with Balora is easy! Create an account, fill in your desired perameters, and find volleyball matches in no time! <br><br> <b>Join a Match</b><br> Browse upcoming matches and log in to view player profiles of the people attending to get a feel for the team before joining.<br><br> <b>Create a Match</b> <br>Want to start your own game? Log in, set your preferences (location, date, time, gender, level and description), and create a match. You’ll receive notifications when players join.<br><br><b>Connect with Players</b><br> Once logged in, players can view your profile and you can see theirs. It’s all about making volleyball more social, spontaneous, and fun.</p>
         </div>
         <div class="card-footer p-2 text-end">
-          <a href="log-in.html" class="btn btn-primary">Learn more</a>
+          <a href="matches.html" class="btn btn-primary">Check it out!</a>
         </div>
       </div>
     </div>

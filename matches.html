@@ -74,6 +74,59 @@
   <h1 class="display-3 fw-bold text-white py-3 off-white">Matches</h1>
 </section>
 	  
+
+<!-- Search Bar Wrapper -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <form class="row g-3" action="matches.html" method="GET">
+        <!-- Location Input -->
+        <div class="col-12 col-md-3">
+          <input 
+            type="text" 
+            class="form-control" 
+            placeholder="Search location..." 
+            aria-label="Location search"
+          >
+        </div>
+
+        <!-- Date Picker -->
+        <div class="col-12 col-md-3">
+          <input type="date" class="form-control" aria-label="Select date">
+        </div>
+
+        <!-- Level Dropdown -->
+        <div class="col-12 col-md-2">
+          <select class="form-select" aria-label="Level select">
+            <option selected>Level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </div>
+
+        <!-- Gender Dropdown -->
+        <div class="col-12 col-md-2">
+          <select class="form-select" aria-label="Gender select">
+            <option selected>Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="something different">something different</option>
+            <option value="mixed">mixed</option>
+          </select>
+        </div>
+
+        <!-- Search Button -->
+        <div class="col-12 col-md-2">
+          <button type="submit" class="btn btn-light w-100">Search</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+	  
     <!-- A grid with cards
       Learn about grids at: https://getbootstrap.com/docs/5.1/layout/grid/
       Learn about cards at: https://getbootstrap.com/docs/5.1/components/card/
