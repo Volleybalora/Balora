@@ -349,3 +349,21 @@ body, html {
   object-fit: cover;
 }
 
+
+.text-align-righ{
+	text-align: right;
+}
+
+.text-align-left{
+	text-align: left;
+}
+
+.btn-custom-blue {
+  background-color: #329cce;
+  color: #FCEFD4;
+  border: none;
+}
+
+.btn-custom-blue:hover {
+  background-color: #268ab8;
+}
