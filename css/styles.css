@@ -349,6 +349,11 @@ body, html {
   object-fit: cover;
 }
 
+
+.text-align-righ{
+	text-align: right;
+}
+
 .text-align-left{
 	text-align: left;
 }
@@ -363,6 +368,3 @@ body, html {
   background-color: #268ab8;
 }
 
-.text-blue {
-	color: #329CCE;
-}
