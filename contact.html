@@ -36,12 +36,12 @@
 	
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
 			  
 			<!--matches page-->
 			<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Matches
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -65,8 +65,8 @@
 			
         	
 		<div class="d-flex gap-3 ms-auto">
-        	<a class="btn btn-outline-primary" href="log-in.html">Create Match</a>
-			<a class="btn btn-outline-primary" href="log-in.html">Login</a>
+			<a class="btn custom-create-btn" href="log-in.html">Create Match</a>
+        	<a class="btn custom-login-btn" href="log-in.html">Login</a>
       	</div>
         </div>
       </div>
@@ -78,7 +78,7 @@
     <section class= "contact">
 		<div class="info-wrapper">
 		<div class= "content">
-			<h2><b>Contact Us</b></h2>
+			<h2 class="header-font">Contact Us</h2>
 			<p><b>Do you have any concerns, questions or suggestions? You can contact us via a letter, an email, or a phone call from Monday until Thursday from 9am - 17pm. We will assist you as soon as possible.</b></p>
 		</div>
 		
@@ -86,9 +86,9 @@
 		<div class= "container">
 			<div class= "contact-info">
 				<div class = "box">
-					<div class= "icon"> <img src="images/location-sign.svg" width="40" alt="Balora Office Location"> </div> 
+					<div class= "icon"> <img src="images/icons/location-icon.png" class="icon-red" width="40" alt="Balora Office Location"> </div> 
 					<div class= "text">
-						<h3>Postal Adress</h3>
+						<h3 class="header-font">Postal Adress</h3>
 						<p><b>Breda University of Applied Sciences <br> Postbus 3917 <br> 4800 DX  Breda <br> The Netherlands</b></p>
 					</div>
 				</div>		
@@ -96,9 +96,9 @@
 					
 				<!--Start Phone-->
 				<div class = "box"> 
-					<div class= "icon"> <img src="images/phone.svg" width="40" alt="Balora Phone Number"> </div> 
+					<div class= "icon"> <img src="images/icons/phone-icon.png" class="icon-red" width="40" alt="Balora Phone Number"> </div> 
 					<div class= "text">
-						<h3>Phone Number</h3>
+						<h3 class="header-font">Phone Number</h3>
 						<a class="d-flex align-items-center" href="call:+31 (0) 76 533 22 03" target="_blank">
 						<p><b>+31 (0) 76 533 22 03</b></p>
 						</a>
@@ -109,9 +109,9 @@
 				
 				<!--Start Email-->
 				<div class = "box"> 
-					<div class= "icon"> <img src="images/envelope.svg" width="40" alt="Balora Email Adress"> </div> 
+					<div class= "icon"> <img src="images/icons/envelope-icon.png" class="icon-red" width="40" alt="Balora Email Adress"> </div> 
 					<div class= "text">
-						<h3>Email</h3>
+						<h3 class="header-font">Email</h3>
 						<a class="d-flex align-items-center" href="mailto:balora.official1@gmail.com" target="_blank">
 							<p><b>balora.official1@gmail.com</b></p>
 						</a>
@@ -121,9 +121,9 @@
 				
 			<!--Start Socials-->
 				<div class = "box"> 
-					<div class= "icon"> <img src="images/socials.svg" width="40" alt="Balora Email Adress"> </div> 
+					<div class= "icon"> <img src="images/socials.svg" class="icon-red" width="40" alt="Balora Email Adress"> </div> 
 					<div class= "text">
-						<h3>Socials</h3>
+						<h3 class="header-font">Socials</h3>
 						<a class="d-flex align-items-center" href="https://www.instagram.com/balora_official?igsh=eXJyN282ZHdneGE3" target="_blank">
 							<img src="images/instagram.svg" width="20" alt="Balora Tiktok">
 							<span><b>balora_official</b></span>
@@ -140,7 +140,7 @@
 			</div>
 			<div class="contact-form">
 				<form>
-					<h2>Send Message</h2>
+					<h2 class="header-font">Send Message</h2>
 					<div class="input-box">
 						<input type="text" name="" required oninvalid="this.setCustomValidity('Please fill out this field')" oninput="this.setCustomValidity('')">
 						<span>Full Name</span>
