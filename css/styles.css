@@ -333,3 +333,18 @@ body, html {
 .header-font {
 	font-family: 'Wicked Mouse', sans-serif; 
 }
+
+#carouselExampleCaptions {
+  height: 500px;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
