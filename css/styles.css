@@ -368,3 +368,12 @@ body, html {
   background-color: #268ab8;
 }
 
+.narrow-date {
+  max-width: 130px;
+}
+
+.narrow-input {
+  max-width: 160px;
+}
+
+
