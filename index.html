@@ -72,7 +72,7 @@
 	  
 	  
 <!-- Start of section adapted from https://getbootstrap.com/docs/5.1/examples/album/ -->
-<header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
+<header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light off">
   <div class="row">
 	  
 	  
@@ -82,8 +82,8 @@
       
       <!-- Advanced Filter Bar -->
       <form class="row g-3" action="matches.html" method="GET">
-        <!-- Location Dropdown -->
-       <div class="col-12 col-md-3">
+        <!-- Location Search -->
+       <div class="col-12 col-md-3 narrow-input">
   <input 
     type="text" 
     class="form-control" 
@@ -91,11 +91,26 @@
     aria-label="Location search"
   >
 </div>
+		  
+		  <!-- Distance Dropdown -->
+<div class="col-12 col-md-2 narrow-date">
+  <select class="form-select" aria-label="Distance select">
+    <option selected>Distance</option>
+    <option value="3">&lt; 3km</option>
+    <option value="5">&lt; 5km</option>
+    <option value="10">&lt; 10km</option>
+    <option value="15">&lt; 15km</option>
+    <option value="25">&lt; 25km</option>
+    <option value="50">&lt; 50km</option>
+    <option value="75">&lt; 75km</option>
+  </select>
+</div>
+		  
         <!-- Date Picker -->
-        <div class="col-12 col-md-3">
-          <input type="date" class="form-control" aria-label="Select date">
-        </div>
-
+<div class="col-12 col-md-3" style="max-width: 150px;">
+  <input type="date" class="form-control" aria-label="Select date">
+</div>
+		  
         <!-- Level Dropdown -->
         <div class="col-12 col-md-2">
           <select class="form-select" aria-label="Level select">
@@ -167,7 +182,7 @@
 
 	<div class="text-center mt-5 yell blue-color header-font">
   <h2>Anytime, Anywhere</h2>
-  <p class="lead off-white">Find volleyball matches in your area!</p>
+  <p class="lead blue-color">Find volleyball matches in your area!</p>
 </div>
 
 	<!-- Contact Footer -->

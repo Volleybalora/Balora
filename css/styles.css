@@ -368,7 +368,12 @@ body, html {
   background-color: #268ab8;
 }
 
-.text-blue {
-	color: #329CCE;
+.narrow-date {
+  max-width: 130px;
 }
+
+.narrow-input {
+  max-width: 160px;
+}
+
 
