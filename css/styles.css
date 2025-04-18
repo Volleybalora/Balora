@@ -367,3 +367,27 @@ body, html {
 .btn-custom-blue:hover {
   background-color: #268ab8;
 }
+
+.narrow-date {
+  max-width: 130px;
+}
+
+.narrow-input {
+  max-width: 160px;
+}
+
+.custom-dropdown .dropdown-toggle::after {
+  display: none; /* hide the default Bootstrap arrow */
+}
+
+.custom-dropdown-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  background-image: 
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
