@@ -378,3 +378,7 @@ body, html {
   max-width: 160px;
 }
 
+.custom-height {
+	width: 1200px;
+	height: 450px;
+}
