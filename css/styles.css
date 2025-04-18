@@ -378,7 +378,12 @@ body, html {
   max-width: 160px;
 }
 
-.custom-height {
+.custom-size-visual-identity {
 	width: 1200px;
 	height: 450px;
+}
+
+.custom-size-brand-persona {
+	width: 1920px;
+	height: 1080px;
 }
