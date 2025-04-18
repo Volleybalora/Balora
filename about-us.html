@@ -25,7 +25,7 @@
    	<!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
 	<nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <div class="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="images/balora-logo-with-font.png" width="70" alt="Breda University of Applied Sciences">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -117,7 +117,7 @@
         <!-- Right box: Text -->
         <div class="col-md-6 d-flex align-items-center bg-light p-4">
           <div>
-            <h3 class="header-font text-blue">Brand Vision <br><br></h3>
+            <h3 class="header-font blue-color">Brand Vision <br><br></h3>
             <p>
            In a world where international students struggle to commit to full-time sports teams due to busy schedules, we believe that creating a flexible platform for finding casual, fun volleyball matches will allow people to stay active, socialize, and enjoy the sport without the pressure of long-term commitment. Only then can we create a sports community where people can connect and play on their own terms.
             </p>
@@ -275,11 +275,11 @@
 <div class="container outline my-5">
   <div class="row justify-content-center">
     <div class="col-12 col-xl-10">
-      <div class="row g-0 shadow rounded-4 yellow-border overflow-hidden" style="height: 600px;">
-
+      <div class="row g-0 shadow rounded-4 yellow-border overflow-hidden">
+        
         <!-- Brand Persona Image -->
         <div class="col-12 d-flex align-items-center bg-light p-0">
-          <img src="images/brand-persona.jpg" class="w-100 object-fit" alt="Brand Persona">
+          <img src="images/brand-persona.jpg" class="w-100 h-100 object-fit-cover" alt="Brand Persona" style="aspect-ratio: 16/9;">
         </div>
 
       </div>
@@ -299,51 +299,36 @@
   
   <div class="carousel-inner h-100">
     <div class="carousel-item active">
-      <img src="images/brand visual identity/style-guide-one.png" alt="Beach Volleyball" class="carousel-image">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="header-font">Logo</h5>
-        <p>Our logo gives off a warm, welcoming, and energetic feel — just like a great team spirit. This emphasizes our brand value of connection and accessibility. With the open hands, the large cartoony eyes and the encouraging smile, the logo communicates a friendly and approachable style, making everyone feel included and encouraged to join in – pointing out that we value inclusivity and community. <br> We’re all about building connections and being memorable, so our logo is engaging, uplifting, and stands out due to it's playfulness. RETRO/CARTOON?</p>
-      </div>
+      <img src="images/brand-visual-identity/style-guide-one.png" alt="Beach Volleyball" class="carousel-image">
     </div>
-    <div class="carousel-item h-100">
-      <img src="images/brand visual identity/style-guide-three.png" alt="Playing Volleyball" class="carousel-image">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="header-font">Colour Palette</h5>
-        <p>Our colour palette's primary colours are a light-warm beige, emphasizing the warmth and welcoming feel, and a bright blue with a warmer type of hue, connecting back to the original colours of the volleybal, but with a little twist to make our brand stand out more. Our secondary colours are a warm, retro type of yellow CHECKKK, tying back to the volleyball colours, and a retro red to make secondary elements like icons or lines pop out more.</p>
-      </div>
+      <div class="carousel-item h-100">
+      <img src="images/brand-visual-identity/style-guide-two.png" alt="Action Volleyball Shot" class="carousel-image">
+    </div> 
+	<div class="carousel-item h-100">
+      <img src="images/brand-visual-identity/style-guide-three.png" alt="Playing Volleyball" class="carousel-image">
     </div>
-    <div class="carousel-item h-100">
-      <img src="images/brand visual identity/style-guide-two.png" alt="Action Volleyball Shot" class="carousel-image">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="header-font">Fonts</h5>
-        <p>For the main font for our titles, we went for a playful cartoon font, staying true and coherent to the theme of our logo. The secondary font is simple, prioritizing the readability while still ...READ  </p>
-      </div>
-    </div>
+ 
   </div>
   
 	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-  		<img src="images/icons/balora-hand-links.png" alt="Previous" width="80">
+  		<img src="images/icons/balora-hand-links.png" alt="Previous" class="carousel-arrow">
   		<span class="visually-hidden">Previous</span>
 	</button>
 
 	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-  		<img src="images/icons/balora-hand-right.png" alt="Next" width="80">
+  		<img src="images/icons/balora-hand-right.png" alt="Next" class="carousel-arrow">
   		<span class="visually-hidden">Next</span>
 	</button>
+
 
 </div>
 <!--End Visual Identity-->
 		  
 		  
-    <!-- A footer with socials -->
-    <!-- Contact Footer -->
+<!-- Contact Footer -->
 <footer class="text-light py-5" style="background-color: #329cce;">
   <div class="container d-flex flex-column justify-content-center align-items-center">
     <h2 class="mb-4 text-center header-font off-white">Contact</h2>
-
-    <!-- Main Contact Info -->
-  
-    <p class="text-center"> 
 
     <!-- Contact Rows Side-by-Side -->
     <div class="row text-center mt-4 w-100">
@@ -355,38 +340,35 @@
         <p><strong>Phone:</strong><br>+31 6 12345678<br><strong>Email:</strong><br>info@balora.com</p>
       </div>
       <div class="col-12 col-md-4 off-white">
-        <p><strong>Socials:</strong><br>
-          <!--Start Socials-->
-				<div class="box d-flex justify-content-center"> 
-  <div class="text d-flex flex-column gap-2">
-    
-    <!-- Instagram -->
-    <a class="d-flex align-items-center gap-2 text-white text-decoration-none off-white" 
-       href="https://www.instagram.com/balora_official?igsh=eXJyN282ZHdneGE3" 
-       target="_blank">
-      <img src="images/instagram.svg" width="20" alt="Balora Instagram">
-      <span><b>balora_official</b></span>
-    </a>
+        <p><strong>Socials:</strong></p>
+        <!--Start Socials-->
+        <div class="box d-flex justify-content-center"> 
+          <div class="text d-flex flex-column gap-2">
 
-    <!-- TikTok -->
-    <a class="d-flex align-items-center gap-2 text-white text-decoration-none off off-white" 
-       href="https://www.tiktok.com/@balora_official1?_t=ZN-8vYWO4fvnT4&_r=1" 
-       target="_blank">
-      <img src="images/tiktok.svg" width="20" alt="Balora TikTok">
-      <span><b>balora_official1</b></span>
-    </a>
-    
-  </div>
-</div>
-				<!--End Socials-->
-        </p>
+            <!-- Instagram -->
+            <a class="d-flex align-items-center gap-2 text-white text-decoration-none off-white" 
+              href="https://www.instagram.com/balora_official?igsh=eXJyN282ZHdneGE3" 
+              target="_blank">
+              <img src="images/instagram.svg" width="20" alt="Balora Instagram">
+              <span><b>balora_official</b></span>
+            </a>
+
+            <!-- TikTok -->
+            <a class="d-flex align-items-center gap-2 text-white text-decoration-none off-white" 
+              href="https://www.tiktok.com/@balora_official1?_t=ZN-8vYWO4fvnT4&_r=1" 
+              target="_blank">
+              <img src="images/tiktok.svg" width="20" alt="Balora TikTok">
+              <span><b>balora_official1</b></span>
+            </a>
+
+          </div>
+        </div>
+        <!--End Socials-->
       </div>
     </div>
   </div>
 </footer>
-    <!-- End of the footer -->
-	  
-	  
+<!--End Contact section-->
 
 
 	</body>
