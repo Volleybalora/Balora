@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,20 +13,20 @@
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <title>PRJ4 Base Group Template &mdash; Landing Page</title>
+    <title>PRJ4 Base Group Template &mdash; Corporate Information</title>
 
     <!-- Google Analytics code goes just below here (check PRJ4 Guide for details) -->
 
     <!-- End of Google Analytics code -->
-
+    
   </head>
-  <body class="h-100 d-flex flex-column">
+  <body data-bs-spy="scroll" data-bs-target="#navbar-corporate" data-bs-smooth-scroll="true">
 
     <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
-        <a class="navbar-brand" href="#">
-          <img src="images/balora-logo-with-font.png" width="70" alt="Breda University of Applied Sciences">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/balora-temporary-logo.png" width="40" alt="balora-logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -34,202 +34,611 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-			  
-			<!--matches page-->
-			<li class="nav-item dropdown">
-              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Volleyball Matches
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="matches.html">Join match</a></li>
-                <li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="log-in.html">Create Volleyball Match</a></li>
-              </ul>
-            </li>
-			<!--matches page-->
-			  
-			 <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="about-us.html">About us</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="corporate.html">Corporate</a>
+              <a class="nav-link active" href="corporate.html">Corporate</a>
             </li>
-		 </ul>
-			
-			<div class="d-flex gap-3 ms-auto">
-				<a class="btn custom-create-btn" href="log-in.html">Create Volleyball Match</a>
-        		<a class="btn custom-login-btn" href="log-in.html">Login</a>
-      		</div>
+          </ul>
         </div>
       </div>
     </nav>
     <!-- End of navigation bar -->
-	  
-	  
-<!-- Start of section adapted from https://getbootstrap.com/docs/5.1/examples/album/ -->
-<header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light off">
-  <div class="row">
-	  
-	  
-    <div class="col-md-10 col-lg-8 mx-auto py-5">
-      <h1 class="display-3 header-font off-white">Welcome to Balora</h1>
-      <p class="lead">Find your volleyball matches right now!&nbsp;</p>
-      
-      <!-- Advanced Filter Bar -->
-      <form class="row g-3" action="matches.html" method="GET">
-        <!-- Location Search -->
-       <div class="col-12 col-md-3 narrow-input">
-  <input 
-    type="text" 
-    class="form-control" 
-    placeholder="Search location..." 
-    aria-label="Location search"
-  >
-</div>
+
+    <header class="py-2 py-md-4 py-lg-5 text-center container-fluid bg-gradient text-light">
+      <h1 class="fw-light">Corporate information</h1>
+    </header>
+
+    <main class="container-fluid container-xl">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 col-lg-2 py-4">
+          <nav id="navbar-corporate" class="nav sticky-sm-top flex-row flex-sm-column lh-1 justify-content-sm-between">
+            <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none" href="#general">General</a>
+            <a class="nav-link p-0 mb-sm-3 fs-5 me-2 me-sm-0 text-decoration-none" href="#content">Content</a>
+            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#production">Production</a>
+            <nav class="nav d-none d-sm-flex flex-column mb-2">
+              <a class="nav-link ms-3 p-0 mb-2" href="#production-1">Design Elements</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#production-2">Credits</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#production-3">Testing Report</a>
+            </nav>
+            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#marketing">Marketing</a>
+            <nav class="nav d-none d-sm-flex flex-column mb-2">
+              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-1">Context of campaign and promotional activities</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-2">Learning Points</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-3">Future Planning</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#marketing-4">Professionalism</a>
+            </nav>
+            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#management">Management</a>
+            <nav class="nav d-none d-sm-flex flex-column mb-2">
+              <a class="nav-link ms-3 p-0 mb-2" href="#management-1">Lean Canvas</a>
+              <a class="nav-link ms-3 p-0 mb-2" href="#management-2">Validation of Assumptions</a>
+            </nav>
+            <a class="nav-link p-0 mb-sm-2 fs-5 me-2 me-sm-0 text-decoration-none" href="#appendix">Appendix</a>
+          </nav>    
+        </div>
+        <div class="col-sm-8 col-md-9 col-lg-10 py-sm-4">
+
+          <!-- Start General -->
+          <h2 id="general">General Information</h2>
+          <p>
+            This branded website is publicly available at
+            <a href="https://buas-media-interactive.github.io/">buas-media-interactive.github.io/my-website</a>
+            <em>(please change text <b>and</b> hyperlink destination)</em>
+          </p>
+          <p>
+            This website was created by:
+            This website was for PRJ4 Brand Devolpment.  <em>&nbsp;</em>
+          </p>
+          <ol>
+            <li>Yasmin Mahamed (ID: 234614)</li>
+            <li>Lily de Koning (ID: 234267)</li>
+			  <li>Niels Beukers (ID: 224061)</li>
+          </ol>
+          <!-- End General -->
+
+          <!-- Start Content -->
+
+          <h2 id="content">Content</h2>
+          <p>The match between students and pieces of content and corresponding links:</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr class="bg-white">
+                <th scope="col">#</th>
+                <th scope="col">Student ID</th>
+                <th scope="col">Value</th>
+                <th scope="col">Name and link of content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1.</th>
+
+                <td>234614&nbsp;</td>
+                <td>Yasmin Mahamed</td>
+
+                 <td>
+                  <a href="corporate.html">Corperate</a>
+                </td>
+               
+              </tr>
+              <tr>
+                <th scope="row">2.</th>
+
+       				<td>234267&nbsp;</td>
+					<td>Lily de Koning&nbsp;</td>
+                <td>
+                  <a href="about-us.html">About us&nbsp;&nbsp;</a>
+				  <a href="contact.html">Contact&nbsp;&nbsp;</a>
+				  <a href="log-in.html">Log in&nbsp;&nbsp;</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3.</th>
+
+                <td>224061</td>
+                <td>Niels Beukers</td>
+
+                <td>
+                  <a href="index.html">Home&nbsp;&nbsp;</a>
+				  <a href="matches.html">Matches</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+			<p><b>Brand Name</b><br>When it came to creating our brand name, we were quite stumped. We just did not seem to be able to think of something we could all agree upon. At first, we were leaning towards something much easier, “Team Up”. Although it was simple and already implied what the website was about, we were just not satisfied with it.<br><br> We decided to give the name a second draft, thinking about how we could think of a name that sounds truly unique. We decided to look at Odido, which was based on the Greek word “akouein”, which means “to listen”, for inspiration. After long conversations with each other, we wanted a name that exudes confidence and fun. We looked up the translation for volleyball in Latin. There was no direct translation, but the closest thing was “Volapila,” which is of “volare”, meaning to fly, and “pila”, which translates to ball. <br><br>We took the first word, “volare”, and started switching some letters around. When we switched the O and the A, we noticed “Valore” almost sounded like “Valor”, which means great courage in the face of danger. After a bit of playing with that, we eventually changed the V to a B. We liked this since it incorporated the ball aspect of the sport. <br><br>As the last step, we decided to add an A at the end. We found that just “Balor” made it sound strange, and adding the A at the end to change it to <b>“Balora”</b>, made it sound much better and more inviting.</p>
+			<img src="images/balora-logo-with-font.png" alt="Balora Logo" width="400px">
+			<p><b>Brand Logo</b><br>Our logo went through many phases as well. Anything from incredibly simple, like having one letter, to more complex designs involving a volleyball radar. However, no matter how much we tried, we just were not able to get it right.<br><br> After getting the feedback that our logo should be more playful, we decided to heavily lean into this. Instead of trying to salvage what was already there, we decided to scrap all of our current ideas and start completely from scratch. We tried to think of something playful, and what could be the most playful of everything, and concluded that nothing is more playful than classic cartoons. <br><br>We decided to make a cartoon character out of a volleyball and make him our logo. Not only is this logo fun, but it also plays into Gen Z and millennials' love of retro aesthetics. In a world where all companies keep simplifying and simplifying their logos, we believe our logo is a breath of fresh air, which helps it stick out among its competitors, creating a truly unique and memorable logo.</p>
+          
+          <!-- End Content, start Production -->
+          
+          <h2 id="production" class="mt-5">Production</h2>
+          <h4 id="production-1" class="mt-2">Design Elements</h4>
+			<p> <b>Balora Style Guide</b><br></p>
+		  <img src="images/balora-vertical-style-guide.png" alt="Balora Logo" width="400px">
+          <p><br><b>Colour scheme</b> <br> Our colour scheme consists of four colours in total and white and black. Our <b>primary colours are blue and beige</b>, our secondary colours are yellow and red and the remaining two are white and black. </p>
+          <ul>
+            <li>
+              <ul class="list-unstyled">
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #329CCE ;"></span>
+                  #329CCE
+                  <em>The blue colour is inspired by the original volleyball colours, but is tailored to our brand personality. We are a brand with a welcoming, energetic and positive feel, which shows in our marketing campaign. Thus, we chose this specific warmer shade of blue, because it accurately fits those descriptions while maintaining the feelings of energy, youthfulness and sports that come with volleyball.</em>
+                </li>
+              </ul>
+            </li>
+			<li>
+              <ul class="list-unstyled">
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #FCEFD4  ;"></span>
+                  #FCEFD4 
+                  <em>The beige colour is a slight twist on the traditional colours of a volleyball, so we are keeping the connection, but tailoring it to our brand personality and values. For instance, beige more bly represents the warmth, accessibility, connection and inclusivity our brand stands for. Additionally, it adds to the approachability feel of our brand, due to the soft tone.<br><br></em>
+                </li>
+              </ul>
+            </li>
+			<li>
+              <ul class="list-unstyled">
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color: #D14139;"></span>
+                  #D14139  
+                  <em>The red is a retro red, which matches our logo that has retro elements. We mainly use it to add a unique colour to our colour palette, outside of the traditional volleyball colours, highlighting Balora’s bold spirit. On top of that, this colour is perfect to make elements pop out and draw attention to certain features. </em>
+                </li>
+              </ul>
+            </li>
+			 <li>
+              <ul class="list-unstyled">
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color:	#FAC74F   ;"></span>
+                  #FAC74F  
+                  <em>The retro yellow is a third colour related to the traditional volleyball colours. This colour communicates a fun and happy feel, tying back to the value of  playfulness of our brand. The yellow is used for accents to make certain elements stand out more.<br><br></em>
+                </li>
+              </ul>
+            </li>
+			</ul>
+			<li>
+              <ul class="list-unstyled">
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color:	#FFFFFF   ;"></span>
+                  #FFFFFF 
+                  <em>For a more clean colour contrast, we sometimes implement white to provide better readability and distinction between element.</em>
+                </li>
+              </ul>
+            </li>
+			 <li>
+              <ul class="list-unstyled">
+                <li>
+                  <span class="border border-secondary rounded px-2 me-1" style="background-color:	#000000   ;"></span>
+                  #000000 
+                  <em>For text, we use black at times, to improve the readability. <br><br></em>
+                </li>
+              </ul>
+            </li>
+            <p><b>Font choices:<br></b> 
+				For our body font we went with "Raleway". We think this font gives a nice and prosessinonal look while still looking round and inviting, a quality that is very important to us. <br><br> Then for our other font (which we used for all of our headers) we knew we had to go big and playful. For this we looked at our logo. It is no secret that our logo is heavily inspired by old cartoons and we really steered into that when choosing our header font. After searching for a long time, we eventually ended up with "Wicked Mouse". This font is clrearly inspired by Looney Tunes and old Disney cartoons, which fits in perfectly with our logo.<br><br></p>
+            <p><b>User interface patterns and structure of navigation and content</b></p>
+            One of the most important aspects a website can have. For this, we went through a lot of trial and error before we got it right. <br><br>
+			Firstly, let's start on the home page. When you boot up Balora, the first thing you are going to notice is the big blue bar welcoming you to the website. This section is also known as a hero section.. We went with a hero section here since we wanted our website to open with a big boom, but found that our soothing blue made it easy on the eyes as well. Below are all of the parameter options our users get when looking for a match. These parameter options consist of multiple functions. We use everything from drop-down menus, calendars, and search bars. We went with all of these options, since we found out in practice that different data was much precise and easier to use when using different kinds of menu functions.. We added these elements to these places because that is the website’s main function. The second thing our users will notice is the navigation bar at the top. On this bar, we have home, volleyball matches, about us, contact, corporate, create volleyball match, and log in. All of these options bring our users to all of the different pages of our website, and we think our users should always have access to these options. When we go down, we see two cards. One with “What is Balora?” and “How does it work?”. We decided to place these two cards here to make sure there is no confusion whatsoever about our website and its functionality.  Then, at the bottom of the page, we find the contact page. Just like the navigation bar, we find the contact bar at the bottom of every page. We find this important since we always want our users to remember they can contact us whenever they need to.<br><br> 
+			Secondly, we will take a look at our matches page. Like the home page, the first thing that our users will see is the blue bar with all of the options. We somewhat copied the hero section from the home page for some visual consistency. The reason why we chose to reuse all the search buttons and bars here is that we want our users to be able to modify their choices whenever they want. Think of situations where a user accidentally filled in some wrong information, in this they will always have the option to correct themselves. When we scroll down, we see all of the match cards. Each card is representative of a match someone has created. Within these cards, we can find all of the appropriate information, like name, location, date, time, skill level, and a description. We put all of these here so our users can easily see what matches work for them. We went with cards in this section since we think it is a clean and efficient way to let players see all the info they need in a small and concise manner.<br><br> 
+			Thirdly, we will take a look at our login page. We first put the user login, with registration, and forgot password below.  This is just like every other login screen is most natural for our users to use. Behind this bar, we can see a picture of people playing volleyball with a setting sun in the background. We found the people playing to be very welcoming to new users. That, mixed with the warm colors of the setting sun, really gives the login screen an amazing welcome feeling, which we were aiming for.<br><br> 
+			Fourthly, let’s take a look at our About Us page. Here we are greeted by a nice picture of a volleyball field around us. We found this to be very aesthetically pleasing, while still keeping in line with what our website is about. When we scroll down, we can find our brand vision. We put this at the top of our About Us page since we find that one of the most important aspects of this page. When our users see this part, they immediately know what Balora is all about. On the left side of this card, we can see a video playing. What better way to convey a vision than to show people? We had one of our talented members edit a nice video that accompanies the text explaining our brand vision flawlessly. Below that are our values. These are neatly organized in drop-down accordions. We found that just putting cards with our information here was messy, and the page ended up feeling cluttered because of it. That is why we decided to store them away in smaller accordions, so that our users can read them once they click on them.  Below our values, our users can find our brand persona. We think our user base would greatly appreciate seeing what we are based on them, and know people can truly find themselves in our created brand persona. Our brand persona is below the other two information blocks since we thought it was more important for our users to learn about us before they can see what we think our general audience is. And lastly, we can see our style guide. We put this at the bottom of the page since we saw this as a nice bonus for die-hard Balora fans. It is truly there for people who love our brand and like to see where all of our styling decisions come from, but since not everyone will be such a die-hard fan, we decided to place this element at the bottom. At first, we had this vision board posted at the bottom in full, but this made the web page simply way too large. After trying out multiple solutions, we decided on using a carousel. This allowed us to split the vision board into three equally large pieces, meaning we could shorten it to two-thirds. This makes the size of the page much more digestible.<br><br>
+			Lastly, there is the contact page. Even though we have a contact bar at the bottom of every page, we wanted to give our users the option to contact us directly from the website. We know that taking extra steps that lead away from our website can often be cumbersome for our users, so we wanted to give everyone the option to contact us from the website directly.
+          <h4 id="production-2" class="mt-2">Credits</h4>
+          <p>Links and/or credits for third-party elements:</p>
+          <ul>
+            <li>HTML <b>templates</b> if these are different from this one (<a href="https://github.com/buas-media-interactive/prj4-group-template" target="_blank">buas-media-interactive/prj4-group-template</a>)</li>
+            <li>The source code for <b>UX patterns</b> other than the ones provided by the “Bootstrap” library (see <a href="https://getbootstrap.com/docs/5.2/" target="_blank">getbootstrap.com/docs</a> for a list of such patterns)</li>
+            <li><b>Images</b> that were not produced by students themselves, including when crediting is not mandatory (in other words, we ask you to credit Unsplash images)</li>
+			 <p>https://unsplash.com/photos/silhouette-of-people-playing-basketball-during-sunset-0NaQQsLWLkA<br>
+				 https://unsplash.com/photos/man-in-white-shorts-playing-volleyball-during-daytime-1v7axvhwnOU<br>
+				 https://unsplash.com/photos/3-men-playing-basketball-on-white-court-jYtOkwj6JL0<br>
+				 http://unsplash.com/photos/a-woman-dives-to-catch-a-frisbee-on-the-beach-tdJfzQ46SRc<br>
+				 https://unsplash.com/photos/a-volley-ball-sitting-in-the-sand-on-a-beach-FSzuN_S1Pww<br>
+				 https://unsplash.com/photos/a-woman-reaching-up-to-hit-a-volleyball-eCdOPh1jYuo<br><br>
+			  https://www.google.com/search?q=location+icon+&sca_esv=bd155e7d16634e36&rlz=1C1___nlNL1080NL1080&udm=2&biw=1536&bih=742&sxsrf=AHTn8zrnGh0gqnYUYlugyVbCxIsk2rgSZA%3A1744839597451&ei=rSMAaJOgG67si-gP0evJ4Q8&ved=0ahUKEwjTqpWDwt2MAxUu9gIHHdF1MvwQ4dUDCBE&uact=5&oq=location+icon+&gs_lp=EgNpbWciDmxvY2F0aW9uIGljb24gMgcQIxgnGMkCMgcQIxgnGMkCMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARI9wdQpwNYsgRwAXgAkAEAmAE2oAFrqgEBMrgBA8gBAPgBAZgCAqACggHCAgcQABiABBgTmAMAiAYBkgcBMqAHzw6yBwEyuAeCAQ&sclient=img#vhid=dJ0nNI4d5Uw5-M&vssid=mosaic<br><br>
+			  https://www.google.com/search?sca_esv=bd155e7d16634e36&rlz=1C1___nlNL1080NL1080&sxsrf=AHTn8zpoOv0G_1vTsbbFJdWTGCrtCTIyfQ:1744839907417&q=phone+icon&udm=2&fbs=ABzOT_DDfJxgmsKFIwrWKcoyw2RfcH6DTUcy5g5alyxuLXMELK9gxOHx2zL9e_ZvOeesLcXTExnPqEEQHcRnLU9CiTSCkj2c_kr1i-CKc6iFTVqL59uCuti1MARPeWTCZVlLUv55Xxa7rHUT3PzMIKAXHrc29lvc7iwtTIu1NVNcs0y7tNEJh_CZi_UbVYeyCzCqGcbE20VM&sa=X&sqi=2&ved=2ahUKEwijmfyWw92MAxUAxQIHHaniBVcQtKgLegQIHRAB&biw=1536&bih=742&dpr=1.25#vhid=ex6o_r7gMT1dPM&vssid=mosaic<br><br>
+			  https://www.pexels.com/video/people-playing-beach-volleyball-6179716/<br>
+				 
+			  https://www.pexels.com/video/close-up-view-of-people-touching-the-ball-6180096/<br> 
+
+			  https://www.pexels.com/video/volleyball-blocked-right-above-the-net-6179958/ </p>
+          </ul>
+          <h4 id="production-3" class="mt-2">Testing Report</h4>
+  <section>
+    <p>Our current primary objective is to find how our users like our current interface and how we can improve on it, so we can make an easy and simple experience for our userbase.</p>
+  </section>
+
+  <p><b>What should our users be able to do?</b></p>
+  <section>
+    <ul>
+      <li>Learn about Balora in a matter of seconds.</li>
+      <li>Easily navigate the website (locate and join volleyball matches).</li>
+      <li>Find out the playful and approachable brand tone we strive for.</li>
+    </ul>
+  </section>
+
+  <p><b>Participations</b></p>
+  <section>
+    <p>Our participants will be five to seven people who fit our target demographic: international students or young adults (18 to 30) living in the Netherlands and interested in the sport of volleyball.</p>
+  </section>
+
+  <p><b>Setting</b></p>
+  <section>
+    <ul>
+      <li>Depending on the participant's availability, the test will be administered in-person on campus in a closed room.</li>
+      <li>The participant will use the Balora website's clickable prototype.</li>
+    </ul>
+  </section>
+
+  <p><b>Protocol</b></p>
+  <section>
+    <p>After a brief introduction, participants will be informed that they are free to speak out loud and that we are testing the website, not them.</p>
+    <p>Four important activities (such as "Find a volleyball game near you" and "Sign up as a new player") will be required of them.</p>
+    <p>We'll encourage participants to share their thoughts while they browse the website using a "think aloud" technique.</p>
+    <p>Key observations will be gathered for usability insights, and sessions will be audio-recorded.</p>
+    <p>We'll do a brief feedback interview regarding their experience, preferences, and overall impressions following the tasks.</p>
+  </section>
+
+  <p><b>Introduction</b></p>
+  <section>
+    <p>Thank you for participating in this user test for Balora, a platform that helps people find and join local volleyball games. We're testing the website to see how clear and user-friendly it is. There are no right or wrong answers here.</p>
+    <p>As you go through the tasks, please say your thoughts out loud—anything you’re thinking, feeling, or wondering. This helps us understand how users experience the website.</p>
+    <p>At the end, we’ll ask you a few short questions about your experience and any feedback you have. This is going to take around 15 to 20 minutes.</p>
+  </section>
+
+  <p><b>Tasks</b></p>
+  <section>
+    <p><b>Find out what the main function of Balora is.</b></p>
+
+    <p><b>Main Tasks (Think Aloud):</b></p>
+    <ul>
+      <li>Find a volleyball game in your preferred location.</li>
+      <li>Join a volleyball match.</li>
+      <li>Create a volleyball match.</li>
+    </ul>
+
+    <p><b>Additional tasks</b></p>
+    <ul>
+      <li>Sign up or log in as a user.</li>
+      <li>Find information on how Balora works.</li>
+      <li>Navigate back to the homepage after joining or creating a game.</li>
+      <li>Find out how many people have joined the match already.</li>
+    </ul>
+  </section>
+
+  <p><b>Feedback</b></p>
+  <section>
+    <ul>
+      <li>Was anything confusing or unclear while using the website?</li>
+      <li>Were there any points where you didn’t know what to do next?</li>
+      <li>Did the website feel smooth and easy to use?</li>
+      <li>What did you like the most about using the website?</li>
+      <li>What did you like the least?</li>
+      <li>If you had to describe your experience in three words, what would they be?</li>
+      <li>How likely are you to use Balora to find volleyball games? (Scale of 1–5)</li>
+      <li>Did the website match your expectations based on the first impression?</li>
+      <li>Did the design feel fun and welcoming to you?</li>
+      <li>What would you improve or change about the website?</li>
+    </ul>
+  </section>
+
+  <p><b>Findings</b></p>
+  <section>
+    <p>After creating our website and getting it running, we tested our website on multiple users to get insight into how our app works and how people like it. The findings were surprising and very insightful.</p>
+
+    <p>The first task we had our users do was to find out what Balora is. This went very well. All of the users were able to identify that Balora is a website that helps people find and create volleyball matches using key visuals and clear options.</p>
+
+    <p><b>Main tasks:</b></p>
+    <ul>
+      <li>Finding a match</li>
+      <li>Joining a match</li>
+      <li>Creating a match</li>
+    </ul>
+
+    <p>While no one failed these tasks, there were some errors. For example, one user misunderstood the term "match" as a romantic match, similar to Tinder. This shows a need for clearer terminology. <br>Another user noticed inconsistency in the search bar design between the home page and the matches screen. They suggested keeping them consistent. One issue with the prototype was the login page, which did not work. <br>Users found this confusing, but this is expected with prototypes. Another comment was about redundancy: there are two buttons for creating a match — one in the matches dropdown and one in the top right corner. A user found this unnecessary. <br> When users tried to find out how Balora works, they were able to get to the About Us page, but some were confused due to too much text on the homepage. A suggestion was made to either reduce the text or move it to a separate page.</p>
+  </section>
+
+  <p><b>Overall Impressions</b></p>
+  <section>
+    <p><b>Positives</b></p>
+    <ul>
+      <li>Clear and straightforward functionality.</li>
+      <li>Tasks were completed without help.</li>
+      <li>Inviting color scheme and logical placements.</li>
+      <li>Strong character in design.</li>
+    </ul>
+
+    <p><b>Negatives</b></p>
+    <ul>
+      <li>Terminology around "match" was confusing.</li>
+      <li>Inconsistencies between pages (e.g., search bars).</li>
+      <li>Visual aspects (color choices and overuse of cards) could be improved.</li>
+      <li>Too much text in some areas, which could be intimidating.</li>
+    </ul>
+  </section>
+
+  <p><b>Conclusion</b></p>
+  <section>
+    <p>The initial prototype of Balora was received surprisingly well. Most things functioned as expected, and the layout made sense to users.</p>
+    <p>There is still room for improvement, especially in design consistency, button placement, and simplifying text-heavy sections.</p>
+    <p>We view these test results as a positive step forward in improving and growing our platform.</p>
+  </section>
+
+          <!-- End Production, start Marketing -->
+
+          <h2 id="marketing" class="mt-5">Marketing</h2>
+  <h3>Communication and Media Plan and Marketing Campaign</h3>
+
+  <p><b>Campaign Overview</b></p>
+  <p>In the Netherlands, many international students struggle to find a local sport community, especially for team sports like volleyball. Weekly matches at traditional student clubs can be hard to commit to, and language barriers often make things even more challenging.</p>
+  <p>Even though volleyball is a popular, non-contact and accessible sport that brings people together, finding a team to play with without the complications of commitment can feel out of reach when you're far from home or don't know where to start.</p>
+  <p><b><em>That's where Balora comes in.</em></b> Balora is the helping hand, offering international students a platform where they can find their local volleyball community. They get the opportunity to create and join spontaneous matches in their area, without the stress of a traditional club and the language pressure. Balora serves as an easy gateway to connect and play volleyball <em>your way</em>, anytime, anywhere.</p>
+
+  <p><b>Why Balora?</b></p>
+  <p>Balora is a new platform that makes playing volleyball spontaneous, accessible, and social. Your skill level doesn’t matter—Balora connects international students in your area who are eager to play volleyball. Whether you want to find a team, join matches, or create your own spontaneous game, Balora helps make it happen.</p>
+
+  <p><b>The Campaign’s Purpose</b></p>
+  <p>This campaign aims to build brand awareness and create interest among our target audience: primarily international students in the Netherlands who love volleyball but struggle to find people to play with. Instead of promoting Balora as a formal product/service, the campaign will use a mix of humor, relatable scenarios, and a friendly tone to show that Balora is here to help and always within reach.</p>
+
+  <p><b>Emotional Core</b></p>
+  <p>This campaign is more than just promoting our brand. It’s about giving our target audience a sense of belonging. Starting a new life in a different country can already be overwhelming, but sometimes, all it takes to feel at home is a shared hobby. That is why Balora offers a way to turn strangers into teammates and teammates into friends. Balora is a reminder that even far from home, there is a place for you. <b>Volleyball, your way – Anytime, anywhere.</b></p>
+
+  <p><b>Objectives</b></p>
+  <ul>
+    <li><b>Specific:</b> Share the word that Balora is the best service for locating volleyball teams in the Netherlands.</li>
+    <li><b>Measurable:</b> Reach 100 followers on the Balora Instagram.</li>
+    <li><b>Achievable:</b> Use humorous, relatable content to attract international students.</li>
+    <li><b>Relevant:</b> Support the objective of creating an active, approachable, and spontaneous volleyball community.</li>
+    <li><b>Time-based:</b> Campaign runs for 3 weeks with a final analysis at the end.</li>
+  </ul>
+
+  <h2>Target Audience</h2>
+  <p><b>Primary:</b> International students (ages 18–25) living/studying in the Netherlands.</p>
+  <p><b>Secondary:</b> Dutch students and casual volleyball lovers who want to play more often but lack a team.</p>
+  <p>We specifically speak to people who are:</p>
+  <ul>
+    <li>Missing a sense of an inclusive and accessible volleyball community</li>
+    <li>Looking for casual ways to socialize with like-minded students</li>
+    <li>Struggling with language barriers or organization when joining sports abroad</li>
+  </ul>
+
+  <p><b>Key Message</b></p>
+  <p><b><em>“Balora believes that volleyball should be spontaneous and accessible to everyone, especially international students.</em></b> Whether you're a casual player or a passionate athlete, Balora connects you to an energetic community that shares your love for volleyball.”</p>
+  <p>With just a few clicks, you can find, join, and enjoy volleyball matches on your own terms.</p>
+
+  <p><b>Brand Identity and Campaign Tone</b></p>
+  <p>Balora’s brand personality is friendly, inclusive, energetic, and a little playful. Our campaign reflects that through:</p>
+  <ul>
+    <li>Visuals of students, outdoor fields, volleyball gear, and diverse players</li>
+    <li>Informal, upbeat, and relatable tone</li>
+    <li>Characters that feel like real friends</li>
+    <li>Settings like campus, parks, and classrooms</li>
+  </ul>
+
+  <p><b>Communication Channels and Platforms</b></p>
+  <ul>
+	<li><b>Instagram:</b> Visual storytelling through posts, stories, and clips. Builds community and relatability. <a href="https://digitalvar.es/en/social-networking/what-is-ig-the-power-of-instagram/" target="_blank">Source</a></li>
+  <li><b>TikTok:</b> Short-form video content with humorous and relatable tone. High potential for virality. <a href="https://amberstudent.com/blog/post/the-ultimate-guide-to-gen-z-social-media-habits#bwhere-do-they-spend-their-time-onlineb" target="_blank">Source</a></li>
+  </ul>
+  
+
+  <p><b>Media Strategy</b></p>
+  <ul>
+    <li><b>Timing:</b> Posts go live at 12 PM and 9 PM for optimal student engagement. <a href="https://sproutsocial.com/insights/best-times-to-post-on-social-media/" target="_blank">Source</a></li>
+    <li><b>Frequency:</b> Mix of daily and weekly posts to test engagement levels. <a href="https://getjobsdone.nl/kennis/blogs/wat-is-de-ideale-frequentie-om-te-posten-op-social-media" target="_blank">Source</a></li>
+    <li><b>Engagement:</b> Second-person narration, story reposts, direct interaction.</li>
+  </ul>
+
+  <p><b>Success Metrics</b></p>
+  <ul>
+    <li>Engagement rate: Likes, shares, comments, saves</li>
+    <li>Follower growth on Instagram and TikTok</li>
+    <li>Emotional connection analysis through comments and interactions</li>
+  </ul>
+
+  <p><b>Campaign Promotional Activities</b></p>
+  <p>The campaign includes:</p>
+  <ul>
+    <li>Humorous and relatable Instagram/TikTok content</li>
+    <li>Hashtags like #volleyballteam #findyourteam #volleyballplayers</li>
+    <li>Platform-specific tweaks to optimize reach</li>
+    <li>Performance comparison across different content types</li>
+  </ul>
+
+  <h3>Post 1: Poster Image (Instagram)</h3>
+  <p><b>What you see:</b> An eye-catching picture of people playing volleyball on a beach as the sun goes down. They're shown as silhouettes, which makes it feel peaceful and like a nice, nostalgic summer evening. The words at the top say, "Dreaming of a volleyball match, but no one to play with?" and at the bottom it says, Balora has your back, find local teams and players to get in the game.</p>
+  <p><b>Caption:</b> "No volleyball team? No problem! 🏐 Balora is coming soon to help you find players. Stay tuned!"#Balora #FindYourTeam #volleyballtime #volleyball #comingsoon #volleyballcommunity</p>
+  <p><b>Vibe:</b> Relaxed and fun, like a chill summer day at the beach. It's meant to make students and young people who like volleyball feel like Balora understands their desires.</p>
+<img src="images/marketing/post-image.jpg" alt="Description of the image" width="200" height="auto">
+
+  <h3>Post 2: Audio-Visual (TikTok/Instagram Reels)</h3>
+  <p><b>What you see:</b> A girl serves a volleyball, almost hitting a student sitting nearby in a casual outdoor setting (grass, houses in the back, sunny day). Right before the ball almost hits, the student looks at the camera and says, "You were probably waiting for that ball to hit me right? Well I am waiting for you to follow Balora, right now!" Then (surprise) the ball hits him anyway, and he makes a face and falls over. For this post, we did not make a difference between the two posts on Instagram and Tiktok.</p>
+  <p><b>Caption:</b> "Join Balora to find volleyball teams! ⚡ Let's play!" #Balora #TeamUp #Volleyball #fyp</p>
+  <p><b>Vibe:</b> Funny, surprising, viral potential.  A twist to a viral trend, keeping it funny and unexpected, trying to grab attention and make people laugh while telling them to join Balora.</p>
+<img src="images/marketing/videoanalyse-een.jpg" alt="description" width="200" height="auto">
+<img src="images/marketing/followup-een.jpg" alt="description" width="200" height="auto">
+  <p><b>Analysis:</b>  A TikTok post uploaded on March 27, 2025 at 21:00. The post collected a total of 687 video views.</p>
+		
+  <p><b>Audience reach and engagement:</b> The post demonstrated a strong ability to reach new users as it was the most viewed video throughout this whole campaign. It reached 97% viewers being new to the content. Returning viewers constituted a smaller segment at 3%. Engagement metrics indicate positive reception. The post received 31 likes, 4 comments, 1 share, and was saved 1 time. Furthermore, the post contributed to account growth by attracting 2 new followers.</p>
+
+  <h3>Post 3: Audio-Visual (TikTok/Instagram Reels)</h3>
+  <p><b>Visual:</b> A tech-fail joke turns into a Balora pitch</p>
+  <p><b>Caption:</b> "Trying to work tech can be a pain! But you know what's way more fun? Playing volleyball!"</p>
+  <p><b>Vibe:</b> Relatable, light, informative</p>
+
+          <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
+            <li class="m-2">
+              Tiktok account: <a href="https://www.tiktok.com/@balora_official1?_t=ZN-8vYWO4fvnT4&_r=1">balora_official<br><br>  
+              </a>
+            </li>
+			  <video autoplay loop muted class="h-20">
+            <source src="images/marketing/social-media-post-een.mp4" type="video/mp4">
+          </video>
+            <li class="m-2">
+              <a href="#"><!-- Please make a link to your socials instead -->
+                <video autoplay loop muted class="h-20" style="object-fit: cover;">
+            <source src="images/marketing/social-media-post-twee.mp4" type="video/mp4">
+          </video>
+              </a>
+            </li>
+            <li class="m-2">
+              <a href="#"><!-- Please make a link to your socials instead -->
+                <img alt="Image Placeholder" class="img-thumbnail h-20" src="images/marketing/videoanalyse-een.jpg">
+              </a>
+            </li>
+			 <li class="m-2">
+              <a href="#"><!-- Please make a link to your socials instead -->
+                <img alt="Image Placeholder" class="img-thumbnail h-20" src="images/marketing/followup-een.jpg">
+              </a>
+            </li>
+			 <li class="m-2">
+              <a href="#"><!-- Please make a link to your socials instead -->
+                <img alt="Image Placeholder" class="img-thumbnail h-20" src="images/marketing/last-analyse-een.jpg">
+              </a>
+            </li>
+			 <li class="m-2">
+              <a href="#"><!-- Please make a link to your socials instead -->
+                <img alt="Image Placeholder" class="img-thumbnail h-20" src="images/marketing/story-analyse-twee.jpg">
+              </a>
+            </li>
+			 <li class="m-2">
+              <a href="#"><!-- Please make a link to your socials instead -->
+                <img alt="Image Placeholder" class="img-thumbnail h-20" src="images/marketing/story-followup-twee.jpg">
+              </a>
+            </li>
+          </ul>
+        
+          <!-- End Marketing, start Management -->
+          <h2 id="management" class="mt-5">Management</h2>
+
+          <h4 id="management-1" class="mt-2">Lean Canvas</h4>
 		  
-		  <!-- Distance Dropdown -->
-<div class="col-12 col-md-2 narrow-date">
-  <select class="form-select" aria-label="Distance select">
-    <option selected>Distance</option>
-    <option value="3">&lt; 3km</option>
-    <option value="5">&lt; 5km</option>
-    <option value="10">&lt; 10km</option>
-    <option value="15">&lt; 15km</option>
-    <option value="25">&lt; 25km</option>
-    <option value="50">&lt; 50km</option>
-    <option value="75">&lt; 75km</option>
-  </select>
-</div>
-		  
-        <!-- Date Picker -->
-<div class="col-12 col-md-3" style="max-width: 150px;">
-  <input type="date" class="form-control" aria-label="Select date">
-</div>
-		  
-        <!-- Level Dropdown -->
-        <div class="col-12 col-md-2">
-          <select class="form-select" aria-label="Level select">
-            <option selected>Level</option>
-            <option value="beginner">Beginner</option>
-            <option value="intermediate">Intermediate</option>
-            <option value="advanced">Advanced</option>
-          </select>
-        </div>
+		  <p><b>Problem (based on the problem interviews)</b><br><br>
+• International students can't easily find local volleyball games.<br>
+• Most volleyball clubs require long-term commitment, high skill, or Dutch fluency.<br>
+• There's no central, casual platform to join or host spontaneous games in nearby areas.</p>
 
-        <!-- Gender Dropdown -->
-        <div class="col-12 col-md-2">
-          <select class="form-select" aria-label="Gender select">
-            <option selected>Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-			<option value="something different">something different</option>
-			<option value="mixed">mixed</option>
-          </select>
-        </div>
+<p><b>Solution (based on the problem and solution interviews)</b><br><br>
+• Filter and find volleyball games by location and skill level.<br>
+• Join or create fun, spontaneous matches with one click.<br>
+• Community-driven, connect with other players in a team setting.</p>
 
-        <!-- Search Button -->
-        <div class="col-12 col-md-2">
-          <button type="submit" class="btn btn-light w-100">Search</button>
-        </div>
-      </form>
-    </div>
-  </div>
-</header>
-<!-- End of hero section -->
-	  
+<p><b>Customer segments</b><br><br>
+<b>Primary:</b> International students (ages 18–25) living/studying in the Netherlands, struggling with language barriers or organizations when joining sports in a foreign country.<br><br>
+<b>Secondary:</b> Dutch students and casual volleyball lovers who want to play more often but lack a team.<br><br>
+<b>Ideal Customer Characteristics:</b><br>
+• Interested in social activities and meeting new people<br>
+• Potentially feeling isolated in a new environment<br>
+• Looking for flexible and non-committal ways to play volleyball</p>
 
-<!-- Beginning of card section -->
-<div class="container mt-4">
-  <div class="row">
-    <!-- Card #1 -->
-    <div class="col-sm-6 col-lg-6 col-xl-6"> <!-- Adjusted from col-lg-4 to col-lg-6 -->
-      <div class="rounded-4 card shadow h-100 yellow-border">
-        <img class="img-fluid mainpage-card-picture" src="images/balora-logo.png" alt="Placeholder Image">
-        <div class="card-body">
-          <h5 class="card-title header-font yellow">What is Balora?</h5>
+<p><b>Unique value proposition</b><br><br>
+There is no pressure, whether you are a beginner or an advanced player. You don’t have to be Dutch speaking and you can find matches nearby your location.</p>
 
-          <p class="card-text"> Balora is designed for international students who want to <b>play volleyball casually and have fun</b> while they're in the Netherlands.<br><br> However, finding a volleyball community in their area might occasionally be difficult or inaccessible. We know how difficult it can be to attend weekly volleyball matches at local clubs. On top of that, when attending volleyball matches, international students often face the challenge of a language barrier.<br><br> That is why <b>Balora removes the barriers</b> and provides a platform where students can join or create a volleyball match.  We act as a reminder that even far from home, there is a place for you in our community.<br><br> <b>Volleyball, your way - Anytime, Anywhere.</b></p>
+<p><b>Unfair advantage</b><br><br>
+• Community brand focused on international students.<br>
+• Spontaneity and social matching not offered by sports clubs or Meetup.<br>
+• Warm, inclusive tone and vibe that makes people feel welcome, not competitive.<br>
+• Local-focused on every city (e.g., Amsterdam, Utrecht, Rotterdam, Breda).</p>
 
-        </div>
-        <div class="card-footer p-2 text-end">
-          <a href="about-us.html" class="btn btn-custom-blue btn-primary">Learn more</a>
+<p><b>Channels</b><br><br>
+• Instagram and TikTok (fun, spontaneous reels and memes).<br>
+• Flyers/posters at international student spots (gyms and campuses).<br>
+• Word of mouth.</p>
+
+<p><b>Key metrics</b><br><br>
+<b>Engagement Rate:</b> Likes, shares, comments, and saves on posts.<br>
+<b>Follower Growth:</b> The increase in followers on both Instagram and TikTok.<br>
+<b>Experiences Analysis:</b> Based on the engagement rate, we will conclude an analysis of the overall emotion of our target audience, looking for the type of interactions they have with our post.</p>
+
+<p><b>Cost structure</b><br><br>
+<b>Fixed costs (Monthly):</b><br>
+• Website and App Development: €2,000<br>
+• Accounting Tools: €25<br>
+• Design Software (Canva Pro, Adobe Creative Cloud): €30<br>
+<b>Total Monthly Recurring Fixed Costs:</b> €2,055<br><br>
+<b>One-Time Costs:</b><br>
+• Business Registration and Legal Fees: €400<br><br>
+<b>Estimated Fixed Costs – First Year:</b><br>
+• Total Annual Recurring Fixed Costs: €24,660 (€2,055 × 12 months)<br>
+• Total One-Time Fixed Costs: €400<br>
+<b>Estimated Total Fixed Costs (Year 1):</b> €25,060</p>
+
+<p><b>Variable Costs</b><br><br>
+• Influencer Collaborations: €100 – €300 per collab<br>
+• Freelance PR/Outreach Support: €100 – €250 per instance<br>
+• Social Media Advertising (Instagram, TikTok): Varies<br>
+• Flyer and Poster Production: Varies<br>
+• Partnerships with Student Orgs / Local Businesses: Based on agreement<br>
+• PR Campaigns: Highly variable</p>
+
+<p><b>Revenue Stream: "Balora Premium"</b><br><br>
+A premium plan offering enhanced features for players looking for more control and visibility.</p>
+
+<p><b>Value Proposition:</b><br><br>
+• Advanced filtering<br>
+• Priority game notifications<br>
+• Private group creation and management tools<br>
+• Enhanced profile features</p>
+
+<p><b>Pricing:</b><br><br>
+€8 per month</p>
+
+<p><b>Cost per Subscription (Variable)</b><br><br>
+• Transaction Processing Fee: €0.40<br>
+• Platform Maintenance per Subscriber: €0.05<br>
+<b>Total Variable Cost per Subscriber:</b> €0.45<br>
+<b>Contribution Margin per Subscriber:</b> €8.00 - €0.45 = €7.55</p>
+
+<p><b>Break-Even</b><br><br>
+<b>Annual Contribution Margin per Subscriber:</b><br>
+€7.55 × 12 months = €90.60<br><br>
+<b>Break-Even Subscribers Required (Year 1):</b><br>
+€25,060 / €90.60 = ~277 subscribers</p>
+
+<p><b>Services/products</b><br><br>
+A website platform that allows international students to find, join casual volleyball games, and even host their own. The service includes features for filtering by location and skill level, and connections between players. Optional premium features, like the ability to create and host private games with specific groups of friends, a "boost" feature to make their open game listings more visible.</p>
+
+<p><b>Validation of Assumptions</b></p>
+
+<p><b>Problem Interviews</b><br><br>
+In our problem interviews with international students in the Netherlands, we explored the specific challenges they encounter when trying to participate in local volleyball games. We identified important challenges that helped shape our concept and focus on elements of our brand, such as accessibility, connection and community building. A commonly mentioned frustration was the difficulty in finding casual, local games that didn't require a long-term commitment or a high skill level. Many felt excluded from existing volleyball clubs due to these factors, as well as the potential language barrier. A problem that was mentioned often in the interviews was the lack of central platforms where they could easily discover and join spontaneous games in their area.</p>
+
+<p>Participants expressed a desire for a way to connect with other players without the pressure of tryouts or weekly obligations. This lack of a simple solution often led to feelings of isolation and missed opportunities for social interaction and physical activity. The need for a platform that specifically caters to non-Dutch speakers was also highlighted, emphasizing the importance of inclusivity. These observations highlighted the need for an easy-to-use platform that connects the local volleyball scene with international students looking for informal play.</p>
+
+<p><b>Solution Interviews</b><br><br>
+Throughout our solution interviews, we presented international students with the concept of Balora, our website platform, and gathered valuable feedback to further refine our business model and website features. Many interviewees were hesitant to join structured clubs but were enthusiastic about the idea of one-click access to casual games. The ability to filter games by both location and skill level was seen as crucial for finding relevant and enjoyable matches. The community-driven aspect of Balora, making connections between players in a team setting, resonated bly with the desire for social interaction and meeting new people. Trust is a crucial element; consumers said that if there were clearer indicators of skill level and a friendly, non-competitive environment, they would be more likely to participate in games and use the platform. Several interviewees appreciated the focus on international students and the promise of a platform that exceeds language barriers. Features like clear game descriptions, easy RSVP options, and potentially even player ratings were suggested to enhance trust and allow smooth game organization. Practical considerations, such as mobile accessibility and clear location information, were also highlighted. Overall, the interviews confirmed a strong interest in an accessible and inclusive platform like Balora that simplifies the process of finding and joining casual volleyball games, giving a sense of community among international students.</p>
+          
+
+          <!-- End Management, start Appendix -->
+          
+
+          <h2 id="appendix" class="mt-5">Appendix</h2>
+
+          <p>
+            Please use the list below to provide links to evidence for all parts of your justication.
+            Please double-check all links before delivering the website.
+            Do not hesitate to refer to these numbers above.
+          </p>
+
+          <ol>
+            <li>
+              <a href="https://" target="_blank">Description of evidence #1</a>
+            </li>
+            <li>
+              <a href="https://" target="_blank">Description of evidence #2</a>
+            </li>
+            <li>
+              <a href="https://" target="_blank">Description of evidence #3</a>
+            </li>
+            <li>
+              <a href="https://" target="_blank">Description of evidence #4</a>
+            </li>
+            <li>
+              <a href="https://" target="_blank">Description of evidence #5</a>
+            </li>
+          </ol>
+          
         </div>
       </div>
-    </div>
-
-    <!-- Card #2 -->
-    <div class="col-sm-6 col-lg-6 col-xl-6"> <!-- Adjusted from col-lg-4 to col-lg-6 -->
-      <div class="rounded-4 card shadow h-100 yellow-border">
-        <img class="rounded-4 img-fluid mainpage-card-picture" src="images/playingvolleyball.jpg" alt="Placeholder Image">
-        <div class="card-body">
-          <h5 class="card-title header-font">How does it work?&nbsp;</h5>
-          <p class="card-text">Joining or creating a volleyball match with Balora is easy! Create an account, fill in your desired perameters, and find volleyball matches in no time! <br><br> <b>Join a Match</b><br> Browse upcoming matches and log in to view player profiles of the people attending to get a feel for the team before joining.<br><br> <b>Create a Match</b> <br>Want to start your own game? Log in, set your preferences (location, date, time, gender, level and description), and create a match. You’ll receive notifications when players join.<br><br><b>Connect with Players</b><br> Once logged in, players can view your profile and you can see theirs. It’s all about making volleyball more social, spontaneous, and fun.</p>
-        </div>
-        <div class="card-footer p-2 text-end">
-          <a href="matches.html" class="btn btn-custom-blue btn-primary">Check it out!</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ending of card section -->
-
-	<div class="text-center mt-5 yell blue-color header-font">
-  <h2>Anytime, Anywhere</h2>
-  <p class="lead blue-color">Find volleyball matches in your area!</p>
-</div>
-
-<!-- Contact Footer -->
-<footer class="text-light py-5" style="background-color: #329cce;">
-  <div class="container d-flex flex-column justify-content-center align-items-center">
-    <h2 class="mb-4 text-center header-font off-white">Contact</h2>
-
-    <!-- Contact Rows Side-by-Side -->
-    <div class="row text-center mt-4 w-100">
-      <div class="col-12 col-md-4 mb-3 mb-md-0 off-white">
-        <p><strong>Address:</strong><br> Balora HQ<br> Sportlaan 25<br>4811AA Breda<br>
-        Netherlands</p>
-      </div>
-      <div class="col-12 col-md-4 mb-3 mb-md-0 off-white">
-        <p><strong>Phone:</strong><br>+31 6 12345678<br><strong>Email:</strong><br>info@balora.com</p>
-      </div>
-      <div class="col-12 col-md-4 off-white">
-        <p><strong>Socials:</strong></p>
-        <!--Start Socials-->
-        <div class="box d-flex justify-content-center"> 
-          <div class="text d-flex flex-column gap-2">
-
-            <!-- Instagram -->
-            <a class="d-flex align-items-center gap-2 text-white text-decoration-none off-white" 
-              href="https://www.instagram.com/balora_official?igsh=eXJyN282ZHdneGE3" 
-              target="_blank">
-              <img src="images/instagram.svg" width="20" alt="Balora Instagram">
-              <span><b>balora_official</b></span>
-            </a>
-
-            <!-- TikTok -->
-            <a class="d-flex align-items-center gap-2 text-white text-decoration-none off-white" 
-              href="https://www.tiktok.com/@balora_official1?_t=ZN-8vYWO4fvnT4&_r=1" 
-              target="_blank">
-              <img src="images/tiktok.svg" width="20" alt="Balora TikTok">
-              <span><b>balora_official1</b></span>
-            </a>
-
-          </div>
-        </div>
-        <!--End Socials-->
-      </div>
-    </div>
-  </div>
-</footer>
-<!--End Contact section-->
-
+    </main>
 
   </body>
 </html>
