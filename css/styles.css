@@ -413,6 +413,23 @@ body, html {
 	color: black;
 }
 
+.fixed-accordion {
+  max-width: 500px;
+  min-height: 100%;
+  width: 100%;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #FAC74F;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+
+
+
 
 
 
