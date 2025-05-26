@@ -427,9 +427,14 @@ body, html {
   display: none;
 }
 
+.accordion-icon {
+  width: 28px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
 
-
-
-
+.accordion-button:not(.collapsed) .accordion-icon {
+  transform: rotate(180deg);
+}
 
 
