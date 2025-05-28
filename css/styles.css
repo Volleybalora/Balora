@@ -218,7 +218,7 @@ footer a:hover {
 	transform: translateY(-20px);
 }
 
-.contact-form .input-box input[type="button"] { 
+.contact-form .input-box input[type="submit"] { 
 	width: inherit;
 	background: #329CCE;
 	color: #FCEFD4;
